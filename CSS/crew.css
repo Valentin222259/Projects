@@ -1,0 +1,79 @@
+.crew-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 157px;
+  padding: 0px 0 0 167px;
+  position: relative;
+}
+
+.crew-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; 
+  max-width: 488px; 
+  gap: 24px; 
+  margin-top: 70px;
+}
+
+#crew-role {
+  font-family: Bellefair;
+  font-weight: 400;
+  font-size: 32px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+#crew-name {
+  font-family: Bellefair;
+  font-weight: 400;
+  font-size: 56px;
+  color: #ffffff;
+}
+
+.crew-text p {
+  font-family: Barlow;
+  font-weight: 400;
+  font-size: 18px;
+  color: #d0d6f9;
+}
+
+.crew-text h3,
+.crew-text h2,
+.crew-text p {
+  margin: 0; 
+}
+
+.crew-image {
+  position: relative;
+  top: -90px;
+}
+
+.crew-image img {
+  height: 572px;
+  object-fit: contain;
+  max-height: 560px;
+}
+
+.crew-nav {
+  display: flex;
+  gap: 16px;
+  margin-top: 80px;
+  flex-shrink: 0;
+}
+
+.crew-dot {
+  width: 15px;
+  height: 15px;
+  opacity: 0.17;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.crew-dot.active {
+  background-color: white;
+  opacity: 1;
+}

@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Space tourism website</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CSS/destination.css" />
+    <link rel="stylesheet" href="CSS/crew.css" />
+    <link rel="stylesheet" href="CSS/technology.css" />
   </head>
-  
-  <body>
-    <script src="script.js"></script>
+
+  <body class="home">
     <nav class="nav-bar">
       <div id="logo">
         <img src="assets/shared/logo.svg" alt="logo" />
@@ -19,22 +21,26 @@
       <div class="nav-links">
         <ul>
           <li>
-            <a href="#"><span>00</span> HOME</a>
+            <a id="home-link" href="#"><span>00</span> HOME</a>
           </li>
           <li>
-            <a href="#"><span>01</span> DESTINATION</a>
+            <a id="destination-link" href="#destination"
+              ><span>01</span> DESTINATION</a
+            >
           </li>
           <li>
-            <a href="#"><span>02</span> CREW</a>
+            <a href="#crew" id="crew-link"><span>02</span> CREW</a>
           </li>
           <li>
-            <a href="#"><span>03</span> TECHNOLOGY</a>
+            <a href="#technology" id="technology-link"
+              ><span>03</span> TECHNOLOGY</a
+            >
           </li>
         </ul>
       </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero" id="home-section">
       <div class="hero-bis">
         <p class="pretitle">SO, YOU WANT TO TRAVEL TO</p>
         <h1>SPACE</h1>
@@ -46,8 +52,78 @@
         </p>
       </div>
       <div class="explore-button">
-        <a href="#">EXPLORE</a>
+        <a id="explore-button" href="#">EXPLORE</a>
       </div>
     </section>
+
+    <section id="destination-section" class="hidden">
+      <p class="section-title"><span>01</span> PICK YOUR DESTINATION</p>
+      <div class="destination-wrapper">
+        <div class="destination-image">
+          <img id="planet-img" />
+        </div>
+        <div class="destination-info">
+          <div class="tabs" id="tabs-container"></div>
+          <div><h2 id="planet-name"></h2></div>
+          <div><p id="planet-desc"></p></div>
+          <div class="divider"></div>
+          <div class="destination-meta">
+            <p>
+              <strong>Avg. Distance:</strong> <br />
+              <span id="planet-distance"></span>
+            </p>
+            <p>
+              <strong>Est. Travel Time:</strong> <br />
+              <span id="planet-time"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="crew-section" class="hidden">
+      <p class="section-title"><span>02</span> MEET YOUR CREW</p>
+      <div class="crew-wrapper">
+        <div class="crew-text">
+          <h3 id="crew-role"></h3>
+          <h2 id="crew-name"></h2>
+          <p id="crew-bio"></p>
+          <div class="crew-nav" id="crew-nav-dots">
+            <div class="crew-dot active"></div>
+            <div class="crew-dot"></div>
+            <div class="crew-dot"></div>
+            <div class="crew-dot"></div>
+          </div>
+        </div>
+        <div class="crew-image">
+          <img id="crew-img" alt="crew member" />
+        </div>
+      </div>
+    </section>
+
+    <section id="technology-section" class="hidden">
+      <p class="section-title"><span>03</span> SPACE LAUNCH 101</p>
+      <div class="technology-wrapper">
+        <div class="tech-text">
+          <div class="tech-nav button-aspect" id="tech-nav-dots">
+            <button class="tech-dot active"><span>1</span></button>
+            <button class="tech-dot"><span>2</span></button>
+            <button class="tech-dot"><span>3</span></button>
+          </div>
+          <div class="tech-nav text-aspect">
+            <p class="tech-subtitle">THE TERMINOLOGY…</p>
+            <h2 id="tech-name"></h2>
+            <p id="tech-desc"></p>
+          </div>
+        </div>
+        <div class="tech-image">
+          <img id="tech-img" alt="technology image" />
+        </div>
+      </div>
+    </section>
+
+    <script src="./JS/index.js"></script>
+    <script src="./JS/crew.js"></script>
+    <script src="./JS/technology.js"></script>
   </body>
 </html>

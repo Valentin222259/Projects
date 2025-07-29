@@ -1,6 +1,19 @@
-body {
+body.home {
   background-image: url("assets/home/background-home-desktop.jpg");
 }
+
+body.destination {
+  background-image: url("assets/destination/background-destination-desktop.jpg");
+}
+
+body.crew {
+  background-image: url("assets/crew/background-crew-desktop.jpg");
+}
+
+body.technology {
+  background-image: url("assets/technology/background-technology-desktop.jpg");
+}
+
 
 .nav-bar {
   display: flex;
@@ -81,7 +94,7 @@ body {
   padding: 100px 165px;
   color: white;
   height: 100vh;
-  padding-top: 80px
+  padding-top: 80px;
 }
 .hero-bis {
   display: flex;
@@ -144,4 +157,8 @@ body {
   letter-spacing: 2px;
   color: #0b0d17;
   text-decoration: none;
+}
+
+.hidden {
+  display: none;
 }

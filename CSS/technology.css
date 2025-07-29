@@ -1,0 +1,108 @@
+.technology-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 160px;
+  gap: 80px;
+}
+
+.tech-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 55px;
+  margin-top: 80px;
+}
+
+.tech-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.button-aspect {
+  gap: 30px;
+}
+
+.tech-dot.active {
+  background-color: white;
+  opacity: 1;
+}
+
+.tech-dot.active span {
+  width: 16px;
+  height: 37px;
+  font-family: Bellefair;
+  font-weight: 400;
+  font-size: 32px;
+  color: #0B0D17;
+}
+
+.tech-dot {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 0.5px solid white;
+  background-color: transparent;
+}
+
+.tech-dot span {
+  width: 16px;
+  height: 37px;
+  font-family: Bellefair;
+  font-weight: 400;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.text-aspect {
+  width: 470px;
+  height: 303px;
+}
+
+.tech-subtitle {
+  width: 150px;
+  height: 19px;
+  font-family: Barlow Condensed;
+  font-weight: 400;
+  font-size: 16px;
+  color: #d0d6f9;
+  margin: 0px;
+}
+
+#tech-name {
+  width: 470px;
+  height: 64px;
+  font-family: Bellefair;
+  font-weight: 400;
+  font-size: 56px;
+  color: #ffffff;
+  margin: 0px;
+}
+
+#tech-desc {
+  width: 444px;
+  height: 192px;
+  font-family: Barlow;
+  font-weight: 400;
+  font-size: 18px;
+  color: #d0d6f9;
+  margin: 0px;
+}
+
+.tech-image {
+  position: relative;
+  top: -90px;
+}
+.tech-image img {
+  width: 515px;
+  height: 527px;
+}
